@@ -1,0 +1,37 @@
+{
+  "name": "seedbox-app",
+  "version": "1.0.0",
+  "description": "A torrent seedbox web application",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "concurrently \"node src/index.js\" \"vite\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "webtorrent": "^2.1.32",
+    "express-rate-limit": "^7.1.5",
+    "express-session": "^1.17.3",
+    "bcryptjs": "^2.4.3",
+    "mongoose": "^8.0.3",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.7",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5",
+    "vuex": "^4.1.0",
+    "@vitejs/plugin-vue": "^4.5.1",
+    "tailwindcss": "^3.3.5",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2",
+    "vite": "^5.0.5"
+  }
+}
